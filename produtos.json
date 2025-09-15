@@ -1,0 +1,10 @@
+[
+    null,
+    {
+        "nome": "pao",
+        "preco": "5",
+        "detalhes": "alimento",
+        "desconto": "0",
+        "quantidade": "5"
+    }
+]
