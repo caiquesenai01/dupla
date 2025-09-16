@@ -5,6 +5,20 @@
         "preco": "5",
         "detalhes": "alimento",
         "desconto": "0",
-        "quantidade": "5"
+        "quantidade": 4
+    },
+    {
+        "nome": "Ma\u00e7a",
+        "preco": "2",
+        "detalhes": "alimento",
+        "desconto": "0",
+        "quantidade": "6"
+    },
+    {
+        "nome": "uva",
+        "preco": "10",
+        "detalhes": "alimento",
+        "desconto": "0",
+        "quantidade": "10"
     }
 ]

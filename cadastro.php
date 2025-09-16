@@ -19,8 +19,8 @@
 		<input type="text" name="nome" placeholder="Nome">
 		<input type="email" name="email" placeholder="Email">
 		<input type="password" name="senha" placeholder="Senha">
-		<button type="submit">Entrar</button>
-	</form>	
+		<button type="submit">Cadastrar</button>
+	</form>
 </body>
 </html>
 <?php
@@ -40,7 +40,8 @@
 
         // Salva no arquivo JSON
         file_put_contents('usuarios.json', json_encode($usuarios, JSON_PRETTY_PRINT));
-        echo "<p class='mensagem'>Usuário cadastrado com sucesso!</p>";
+        header('Location: login.php');
+        exit;
     }
 	?>
 <style>

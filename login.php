@@ -35,12 +35,11 @@
 						$usuario['email'] === $email &&
 						$usuario['senha'] === $senha
 					) {
-						// Login bem-sucedido, redireciona para home.php
-						header('Location: cadastroProdutos.php');
+						header('Location: listaProdutos.php');
 						exit;
 					}
 				}
-				echo "<p>Usuário ou senha incorretos!</p>";
+				echo "<p name='mensagemErro'>Usuário ou senha incorretos!</p>";
 			} else {
 				echo "<p>Nenhum usuário cadastrado!</p>";
 			}

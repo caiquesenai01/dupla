@@ -1,8 +1,17 @@
 [
-    null,
     {
         "nome": "Caique",
         "email": "caiquebarroso15@gmail.com",
+        "senha": "123"
+    },
+    {
+        "nome": "aislan",
+        "email": "aislan@gmail.com",
+        "senha": "123"
+    },
+    {
+        "nome": "aislan",
+        "email": "aislan@gmail.com",
         "senha": "123"
     }
 ]
