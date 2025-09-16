@@ -1,0 +1,449 @@
+{
+  "id": "c4e11961-29f8-43eb-a3d7-6d965baffe7c",
+  "version": "2.0",
+  "name": "dupla",
+  "url": "http://localhost/caique/dupla/cadastro.php",
+  "tests": [{
+    "id": "144967de-77eb-48df-b08d-03993ccc7ca6",
+    "name": "Cadastro",
+    "commands": [{
+      "id": "8fb90513-c7a6-4ef6-879a-42ac8d4f792d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/caique/dupla/cadastro.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dc9cc30-8584-4bff-b471-5a806f8e9bdb",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aislan"
+    }, {
+      "id": "33b238da-715a-46fc-aa1c-d80bd0fd6691",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "aislan@gmail.com"
+    }, {
+      "id": "058ce7c7-989c-4ada-af85-ed2eefd5b0de",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "5408c0f6-ac2f-42dc-a59d-bec1d19b0a21",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6423272c-dc99-4808-a0fc-f5354502e7f3",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.titulo",
+      "targets": [
+        ["css=.titulo", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Login de usuarios')]", "xpath:innerText"]
+      ],
+      "value": "3000"
+    }]
+  }, {
+    "id": "8479e5c8-0045-4447-a2dd-9a18334d3afb",
+    "name": "Login valido",
+    "commands": [{
+      "id": "495dc725-13ea-42bd-a1b0-6a21d513b968",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/caique/dupla/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86f03b12-7b65-4ba9-a116-f1d4144d1092",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aislan"
+    }, {
+      "id": "8f3e6bd7-01c5-4da2-b968-23d8e6d8514d",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "aislan@gmail.com"
+    }, {
+      "id": "d896c1d8-e3e8-4eb2-b00e-fa3cc2b37d65",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "58e63ee0-0ca0-45c5-bf15-a7e41bb95e0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a85d0d4-ce89-4b3f-80cb-e9589e5e03cd",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.titulo",
+      "targets": [],
+      "value": "3000"
+    }]
+  }, {
+    "id": "d20cd686-2623-45d8-b58d-4c03da05c67f",
+    "name": "Login invalido",
+    "commands": [{
+      "id": "47454ace-4b7a-405e-ad97-b7542e9c65bb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/caique/dupla/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4407976-7980-4d94-8719-4dfe130593fa",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aislan"
+    }, {
+      "id": "f31d1ded-b999-46ce-a5f1-6aa72ea7859c",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "aislan@gmail.com"
+    }, {
+      "id": "88f01d98-0e67-4e8a-90d9-33ac7d29bf71",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "67"
+    }, {
+      "id": "02f7494d-73f1-430e-bd9b-db2aef8aa9b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66e97da8-9934-47b5-a0da-cdc838413fc8",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=p",
+      "targets": [
+        ["css=p", "css:finder"],
+        ["xpath=//p[@name='mensagemErro']", "xpath:attributes"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Usuário ou senha incorretos!')]", "xpath:innerText"]
+      ],
+      "value": "3000"
+    }]
+  }, {
+    "id": "9a8f6c26-d698-4b2a-b340-e0913fb4fc3d",
+    "name": "Cadastro de Produtos",
+    "commands": [{
+      "id": "67941b18-c4fb-4c56-8e8e-39ca738c14d6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/caique/dupla/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e41f6d0-5cab-4c75-8166-9d0cf54ba643",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aislan"
+    }, {
+      "id": "6bed055a-7e23-45b0-880a-c987eeec9ecb",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "aislan@gmail.com"
+    }, {
+      "id": "f4eb502e-9452-4892-9036-c363003ced7e",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "d25e2270-1a98-4aa8-b112-8c3ff0db2741",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "229a3752-44c8-4c3d-8e08-7d8928f809e6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastro De Produtos",
+      "targets": [
+        ["linkText=Cadastro De Produtos", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastro De Produtos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'cadastroProdutos.php')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastro De Produtos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c416269-73a9-43c1-9f6e-563738d0cb2c",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "uva"
+    }, {
+      "id": "a9d96cab-481a-46fe-a084-42c4024ab9f7",
+      "comment": "",
+      "command": "type",
+      "target": "name=preco",
+      "targets": [
+        ["name=preco", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='preco']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "270b78d9-d717-447c-a251-fac463114ecc",
+      "comment": "",
+      "command": "type",
+      "target": "name=detalhes",
+      "targets": [
+        ["name=detalhes", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='detalhes']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "alimento"
+    }, {
+      "id": "f1b3646c-d3f9-42ba-8999-cfe74f001e83",
+      "comment": "",
+      "command": "type",
+      "target": "name=desconto",
+      "targets": [
+        ["name=desconto", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='desconto']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "97ec2114-6384-4fd5-96d4-efc16cc56c19",
+      "comment": "",
+      "command": "type",
+      "target": "name=quantidade",
+      "targets": [
+        ["name=quantidade", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='quantidade']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "3dbbef15-adba-4806-8755-6e8fadc4c062",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1b86f34-8c0d-48ef-b094-e5930066858f",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.mensagem",
+      "targets": [
+        ["css=.mensagem", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Produto cadastrado com sucesso!')]", "xpath:innerText"]
+      ],
+      "value": "3000"
+    }]
+  }, {
+    "id": "6b2bde54-d3b8-45f0-b15a-fd23205a08b0",
+    "name": "Listagem de Produtos",
+    "commands": [{
+      "id": "776335a7-5a72-4f76-87ee-0de75455c31e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/caique/dupla/login.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cafb9ab1-a73a-420e-a00b-18105f04ca8b",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "aislan"
+    }, {
+      "id": "615b544a-e39b-42ea-85fb-0b4b86a402e2",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "aislan@gmail.com"
+    }, {
+      "id": "80c90c85-0683-4f04-9f35-904a2935ab25",
+      "comment": "",
+      "command": "type",
+      "target": "name=senha",
+      "targets": [
+        ["name=senha", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='senha']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "063da934-6edf-41d1-94d2-b01c9084002d",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Logar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd4540da-16ac-4321-a1ae-da3aa814f73b",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=th:nth-child(1)",
+      "targets": [
+        ["css=th:nth-child(1)", "css:finder"],
+        ["xpath=//th", "xpath:position"]
+      ],
+      "value": "3000"
+    }]
+  }],
+  "suites": [{
+    "id": "4cffab29-e33a-4a9e-a1f3-aeb482cc208b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["144967de-77eb-48df-b08d-03993ccc7ca6"]
+  }],
+  "urls": ["http://localhost/caique/dupla/cadastro.php"],
+  "plugins": []
+}
