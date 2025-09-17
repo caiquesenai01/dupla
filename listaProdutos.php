@@ -22,7 +22,7 @@
 			<th>Detalhes</th>
 			<th>Desconto</th>
 			<th>Quantidade</th>
-			<th></th>
+			<th>Pedidos</th>
 		</tr>
 		<?php
 		if (file_exists('produtos.json')) {
@@ -35,9 +35,11 @@
 						<td>{$produto['detalhes']}</td>
 						<td>{$produto['desconto']}</td>
 						<td>{$produto['quantidade']}</td>
-						<form action='pedido.php' method='POST'>
-							<td><button name='nomeproduto' value='{$produto['nome']}' type='submit'>Pedido({$produto['nome']})</button></td>
-						</form>
+						<td>
+							<form action='pedido.php' method='POST'>
+								<button name='nomeproduto' value='{$produto['nome']}' type='submit'>Pedido({$produto['nome']})</button>
+							</form>
+						</td>
 					</tr>";
 				}
 			}

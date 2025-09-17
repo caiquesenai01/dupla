@@ -13,5 +13,10 @@
         "nome": "aislan",
         "email": "aislan@gmail.com",
         "senha": "123"
+    },
+    {
+        "nome": "",
+        "email": "",
+        "senha": ""
     }
 ]

@@ -5,7 +5,7 @@
         "preco": "5",
         "detalhes": "alimento",
         "desconto": "0",
-        "quantidade": 4
+        "quantidade": 9
     },
     {
         "nome": "Ma\u00e7a",
@@ -19,6 +19,6 @@
         "preco": "10",
         "detalhes": "alimento",
         "desconto": "0",
-        "quantidade": "10"
+        "quantidade": 8
     }
 ]

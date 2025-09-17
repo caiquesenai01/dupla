@@ -31,14 +31,12 @@
             'senha' => $_POST['senha']
         ];
 
-        // Lê o arquivo existente ou cria um novo array
         $usuarios = [];
         if (file_exists('usuarios.json')) {
             $usuarios = json_decode(file_get_contents('usuarios.json'), true);
         }
         $usuarios[] = $usuario;
 
-        // Salva no arquivo JSON
         file_put_contents('usuarios.json', json_encode($usuarios, JSON_PRETTY_PRINT));
         header('Location: login.php');
         exit;
