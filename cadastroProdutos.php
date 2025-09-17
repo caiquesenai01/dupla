@@ -35,14 +35,12 @@
 			'quantidade' => $_POST['quantidade']
         ];
 
-        // Lê o arquivo existente ou cria um novo array
         $produtos = [];
         if (file_exists('produtos.json')) {
             $produtos = json_decode(file_get_contents('produtos.json'), true);
         }
         $produtos[] = $produto;
 
-        // Salva no arquivo JSON
         file_put_contents('produtos.json', json_encode($produtos, JSON_PRETTY_PRINT));
         echo "<p class='mensagem'>Produto cadastrado com sucesso!</p>";
     }

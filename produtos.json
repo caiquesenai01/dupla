@@ -1,14 +1,14 @@
 [
     null,
     {
-        "nome": "pao",
+        "nome": "pão",
         "preco": "5",
         "detalhes": "alimento",
         "desconto": "0",
-        "quantidade": 9
+        "quantidade": 6
     },
     {
-        "nome": "Ma\u00e7a",
+        "nome": "Maçã",
         "preco": "2",
         "detalhes": "alimento",
         "desconto": "0",

@@ -37,7 +37,7 @@
 						<td>{$produto['quantidade']}</td>
 						<td>
 							<form action='pedido.php' method='POST'>
-								<button name='nomeproduto' value='{$produto['nome']}' type='submit'>Pedido({$produto['nome']})</button>
+									<button class='pedido-btn' name='nomeproduto' value='{$produto['nome']}' type='submit'>Pedido({$produto['nome']})</button>
 							</form>
 						</td>
 					</tr>";
@@ -171,5 +171,25 @@
 		th, td {
 			padding: 8px 10px;
 		}
+	}
+
+	.pedido-btn {
+		background-color: #d32f2f;
+		color: #fff;
+		border: none;
+		border-radius: 8px;
+		padding: 8px 18px;
+		font-size: 15px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: background 0.2s, transform 0.2s;
+		box-shadow: 0 2px 6px rgba(44, 62, 80, 0.08);
+		margin: 4px 0;
+	}
+
+	.pedido-btn:hover {
+		background-color: #b71c1c;
+		transform: scale(1.05);
+		color: #fff;
 	}
 </style>

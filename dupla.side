@@ -293,7 +293,7 @@
         ["xpath=//input[@name='nome']", "xpath:attributes"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "uva"
+      "value": "abobora"
     }, {
       "id": "a9d96cab-481a-46fe-a084-42c4024ab9f7",
       "comment": "",
@@ -305,7 +305,7 @@
         ["xpath=//input[@name='preco']", "xpath:attributes"],
         ["xpath=//input[2]", "xpath:position"]
       ],
-      "value": "10"
+      "value": "13"
     }, {
       "id": "270b78d9-d717-447c-a251-fac463114ecc",
       "comment": "",
@@ -341,7 +341,7 @@
         ["xpath=//input[@name='quantidade']", "xpath:attributes"],
         ["xpath=//input[5]", "xpath:position"]
       ],
-      "value": "10"
+      "value": "15"
     }, {
       "id": "3dbbef15-adba-4806-8755-6e8fadc4c062",
       "comment": "",
